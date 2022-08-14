@@ -1,0 +1,9 @@
+lesson*/.idea/*
+lesson*/hooks/*
+lesson*/info/*
+lesson*/objects/*
+lesson*/refs/*
+lesson*/venv/*
+lesson*/config
+lesson*/description
+lesson*/HEAD
