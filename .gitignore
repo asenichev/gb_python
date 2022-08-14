@@ -1,3 +1,4 @@
+.gitignore
 description.md
 lesson*/.idea/*
 lesson*/hooks/*
