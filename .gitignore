@@ -1,4 +1,3 @@
-.gitignore
 description
 lesson*/.idea/*
 lesson*/hooks/*
