@@ -1,5 +1,5 @@
 .gitignore
-description.md
+description
 lesson*/.idea/*
 lesson*/hooks/*
 lesson*/info/*
