@@ -1,4 +1,4 @@
-description
+description*
 desktop
 lesson*/.idea/*
 lesson*/hooks/*
@@ -8,3 +8,4 @@ lesson*/refs/*
 lesson*/venv/*
 lesson*/config
 lesson*/HEAD 
+lesson*/test*
