@@ -14,11 +14,28 @@
 Пример словаря: {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 """
 
-subj = {}
-with open('file_6.txt', 'r', encoding='utf-8') as init_f:
-    for line in init_f:
+subject_dict = {}
+with open("task_6.txt", encoding='utf-8') as f:
+    for line in f:
+        # "Чистим" строки от лишних символов методом с помощью .replace
         clear_line = line.replace("(л)", "").replace("(пр)", "").replace("(лаб)", "").replace(".", "")
-        subject, lecture, practice, lab = line.split()
-        subj[subject] = int(lecture) + int(practice) + int(lab)
-    print(f'Общее количество часов по предмету - \n {subj}')
-    init_f.close()
+        # Метод split() разбивает строку на список
+        subject, lecture, practice, lab = clear_line.split()
+        # print(f'{clear_line}')
+        # Присваиваем переменным 0, т.к. для арифметических операций используется тип int
+        lect_int = 0
+        practice_int = 0
+        lab_int = 0
+        # Если элемент списка не равен прочерку = условно пустому значению, присваиваем значение элемента списка с
+        # типом данных int ранее созданным переменным, в противном случае они остаются со значением 0
+
+        if lecture != "-":
+            lect_int = int(lecture)
+        if practice != "-":
+            practice_int = int(practice)
+        if lab != "-":
+            lab_int = int(lab)
+        # print(f'{lect_int}, {practice_int}, {lab_int}')
+        subject_dict[subject] = lect_int + practice_int + lab_int
+    print(f"{subject_dict}")
+    # f.close()
